@@ -1,0 +1,56 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+
+<p>Bootstrap Button</p>
+
+<button type="button" class="mini circular negative ui icon button "><i class="trash alternate outline icon"></i></button>
+
+
+<div class="ui three buttons">
+  <button class="ui active button">One</button>
+  <button class="ui button">Two</button>
+  <button class="ui button">Three</button>
+</div>
+
+
+<select name="skills" multiple="" class="ui fluid dropdown">
+  <option value="">Skills</option>
+  <option value="angular">Angular</option>
+  <option value="css">CSS</option>
+  <option value="ember">Ember</option>
+  <option value="html">HTML</option>
+  <option value="javascript">Javascript</option>
+  <option value="meteor">Meteor</option>
+  <option value="node">NodeJS</option>
+</select>
+
+<div class="ui segment">
+  <button class="ui inverted button">Standard</button>
+  <button class="ui inverted primary button">Primary</button>
+  <button class="ui inverted secondary button">Secondary</button>
+  <button class="ui inverted red button">Red</button>
+  <button class="ui inverted orange button">Orange</button>
+  <button class="ui inverted yellow button">Yellow</button>
+  <button class="ui inverted olive button">Olive</button>
+  <button class="ui inverted green button">Green</button>
+  <button class="ui inverted teal button">Teal</button>
+  <button class="ui inverted blue button">Blue</button>
+  <button class="ui inverted violet button">Violet</button>
+  <button class="ui inverted purple button">Purple</button>
+  <button class="ui inverted pink button">Pink</button>
+  <button class="ui inverted brown button">Brown</button>
+  <button class="ui inverted grey button">Grey</button>
+  <button class="ui black button">Black</button>
+</div>
+
+<button class="ui right floated button">Right Floated</button>
+<button class="ui left floated button">Left Floated</button>
+
+<i class="us flag"></i>
+<i class="france flag"></i>
+<i class="myanmar flag"></i>
+
+<script type="text/javascript">
+$('select.dropdown').dropdown('set selected', ['meteor', 'ember']);
+</script>

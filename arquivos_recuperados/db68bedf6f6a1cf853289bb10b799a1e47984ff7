@@ -1,0 +1,35 @@
+<%- model_class = Post -%>
+<h2 class="ui header">
+  Listar <%=  I18n.t('activerecord.models.post') %>
+  <div class="sub header">Lista de registros.</div>
+</h2>
+<%= link_to " Incluir", new_post_path, class: "ui right small floated primary button" %>
+
+<table class="ui celled striped table">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:message) %></th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th>translation missing: en.helpers.actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.message %></td>
+        <td><%= post.title %></td>
+        <td>
+          <%= link_to(post, class: 'ui icon button') do %>
+            <i class="icon info"></i>
+          <% end %>
+          <%= link_to(edit_post_path(post), class: 'ui icon button') do %>
+            <i class="icon edit outline"></i>
+          <% end %>
+          <%= link_to(post, method: :delete, class: 'ui negative icon button') do %>
+            <i class="icon trash outline"></i>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
